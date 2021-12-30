@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#BSUB -J PAPG21_MiSIGDB
+#BSUB -P "acc_EHR_ML"
+#BSUB -q express 
+#BSUB -n 12 
+#BSUB -R span[hosts=1]
+#BSUB -W 12:00 
+#BSUB -o %J.stdout 
+#BSUB -eo %J.stderr 
+#BSUB -oo MiSIGDB_%J.out
+
+sh plot_T2D_MiSIGDB.sh

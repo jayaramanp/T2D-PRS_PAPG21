@@ -1,0 +1,18 @@
+These summary statistics describe genome-wide gene-diet interaction analyses for HbA1c conducted in European-ancestry individuals from the UK Biobank. There are 38 files in total, each using a different dietary exposure: 30 are single dietary traits derived from food frequency questionnaires completed at baseline study visit, and 8 are dietary patterns based on PCA of various subsets of these 30 traits.
+
+Columns are as follows:
+SNPID: variant ID (chromosome_position_nonEffectAllele_effectAllele)
+rsID: variant rsID
+CHR: chromosome
+POS: position (GRCh37)
+Allele1: non-effect allele
+Allele2: effect allele
+N_Samples: sample size
+AF: effect allele frequency
+Beta_Marginal: marginal genetic effect estimate (i.e., from a model without an interaction term)
+Var_Beta_Marginal: variance of the marginal genetic effect estimate
+Beta_Interaction_1: interaction effect estimate
+Var_Beta_Interaction_1_1: variance of the interaction effect estimate
+P_Value_Marginal: marginal genetic effect p-value
+P_Value_Interaction: interaction effect p-value
+P_Value_Joint: p-value for the 2-degrees of freedom joint test of genetic marginal and interaction effect
